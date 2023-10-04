@@ -43,14 +43,16 @@ const App = () => {
         <Console>
         <div>
         <br/>
-        Hello! I am <Blue>Daniel Koch</Blue>, a software developer based in Helsinki, Finland.<br/>
-        Welcome to my site!<br/>
-
-
-        </div>
-        <div>
-        
-
+        Hey there, I'm <Blue>Daniel Koch</Blue>,
+a seasoned software engineer
+who thrives on the artistry of coding.
+Armed with a deep understanding
+of cutting-edge technologies
+and a history of delivering top-notch solutions,
+I'm eager to join fellow developers
+in shaping the future of software.
+Let's craft exceptional code
+and innovate together.
         </div>
         </Console>
         <Footer>
