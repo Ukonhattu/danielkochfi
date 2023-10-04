@@ -118,7 +118,7 @@ const ConsoleInputText = styled.input`
   border: none;
   color: #d4d4d4;
   font-family: monospace;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   flex-grow: 1;
   width: 100%;
@@ -126,6 +126,10 @@ const ConsoleInputText = styled.input`
   margin-left: 0.5rem;
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 0.7rem;
   }
 `;
 
