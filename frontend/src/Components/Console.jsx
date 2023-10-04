@@ -22,11 +22,10 @@ const ConsoleWrapper = styled.div`
   color: #d4d4d4;
   padding: 0;
   border-radius: 0.5rem;
-  width: 90%;
   width: 800px;
   height: 400px;
   font-family: monospace;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   overflow: hidden;
   position: relative;
@@ -34,6 +33,14 @@ const ConsoleWrapper = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
   text-align: left;
+
+  @media (max-width: 1000px) {
+    width: 85vw;
+    height: 85vh;
+    border-radius: 0;
+    border: none;
+    font-size: 0.7rem;
+  }
 `;
 
 const TitleBar = styled.div`
