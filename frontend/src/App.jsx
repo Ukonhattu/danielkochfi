@@ -4,6 +4,10 @@ import Console from './Components/Console'
 
 const Wrapper = styled.div`
 `
+const Blue = styled.span`
+  color: #00bfff;
+`
+
 
 const App = () => {
 
@@ -12,14 +16,12 @@ const App = () => {
       <Wrapper>
         <Console>
         <div>
-        ************************************ <br/>
-        Hello! I am Daniel Koch, a software developer based in Helsinki, Finland.<br/>
+        <br/>
+        Hello! I am <Blue>Daniel Koch</Blue>, a software developer based in Helsinki, Finland.<br/>
         Welcome to my site!<br/>
-        *************************************<br/>
-        h: show help<br/>
-        cv: open my cv<br/>
-        github: open my github<br/>
-        linkedin: open my linkedin</div>
+
+
+        </div>
         <div>
         
 

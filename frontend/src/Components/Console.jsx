@@ -15,6 +15,16 @@ const blink = keyframes`
   }
 `;
 
+const initialize = keyframes`
+  0% {
+    width: 0;
+  }
+  }
+  100% {
+    width: 100%;
+  }
+`;
+
 const ConsoleWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,6 +43,7 @@ const ConsoleWrapper = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
   text-align: left;
+  animation: ${initialize} 2s ease-in-out;
 
   @media (max-width: 1000px) {
     width: 85vw;
@@ -127,6 +138,29 @@ const ConsoleCursor = styled.div`
   right: 1rem;
 `;
 
+const HighlightedText = styled.span`
+  background-color: #ffff00; /* Replace with your desired highlight color */
+  color: #1e1e1e;
+  margin-left: 0.5rem;
+`;
+
+const MenuWrapper = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: left;
+`;
+
+const Menu = () => {
+  return (
+    <MenuWrapper>
+    <HighlightedText>contact</HighlightedText> <span> </span>
+    <HighlightedText>cv</HighlightedText> <span> </span>
+    <HighlightedText>github</HighlightedText> <span> </span>
+    <HighlightedText>linkedin</HighlightedText>
+    </MenuWrapper>
+  );
+}
+
 function Console(props) {
   const [inputValue, setInputValue] = useState('');
   const [history, setHistory] = useState([]);
@@ -164,6 +198,7 @@ function Console(props) {
           <div key={index}>{item}</div>
         ))}
       </ConsoleContent>
+        <Menu />
       <ConsoleInput>
 
       <span>guest@danielkochfi &gt; </span>
