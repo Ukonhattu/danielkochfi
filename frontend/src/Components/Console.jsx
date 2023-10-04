@@ -43,6 +43,7 @@ const ConsoleWrapper = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
   text-align: left;
+  margin-top: 5rem;
   animation: ${initialize} 2s ease-in-out;
 
   @media (max-width: 1000px) {
@@ -51,6 +52,7 @@ const ConsoleWrapper = styled.div`
     border-radius: 0;
     border: none;
     font-size: 0.7rem;
+    margin-top: 0;
   }
 `;
 
